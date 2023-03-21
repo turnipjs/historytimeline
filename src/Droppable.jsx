@@ -6,7 +6,7 @@ export default function Droppable(props) {
     });
 
     return (
-        <div ref={setNodeRef} style={props.style}>
+        <div id={props.id} ref={setNodeRef} style={props.style}>
             {props.children}
         </div>
     );

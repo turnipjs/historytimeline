@@ -1,5 +1,6 @@
 import React from 'react';
 import GameField from "./GameField";
+import DropTest from "./DropTest.jsx";
 
 
 const sampleDict = {
@@ -25,7 +26,11 @@ const sampleDict = {
     },
 };
 const sampleItemIds = [4,3,7];
+const solutionItemIds = [1]
 
 export default function App() {
-    return <div id="app"><GameField items={sampleItemIds} dict={sampleDict}></GameField></div>
+    return <div id="app">
+        <GameField items={{given:sampleItemIds, solution:solutionItemIds}} dict={sampleDict}></GameField>
+        <DropTest></DropTest>
+    </div>
 }
