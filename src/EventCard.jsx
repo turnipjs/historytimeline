@@ -20,7 +20,7 @@ export default function EventCard({id, name, description}) {
         padding: "1em",
         margin: ".5em",
         textAlign: "center",
-        background: "#eee",
+        background: "#fff",
         display: "inline-block",
         fontSize: ".75em",
     };
